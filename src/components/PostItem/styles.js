@@ -28,7 +28,7 @@ export const Tag = styled.div`
   border-radius: 50%;
   font-size: 1.3rem;
   font-weight: 700;
-  background: ${props => props.background};
+  background: ${props => (props.background ? props.background : "#1fa1f2")};
   color: #fff;
   text-transform: uppercase;
 `

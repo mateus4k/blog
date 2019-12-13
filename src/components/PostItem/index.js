@@ -1,21 +1,39 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import { Container, Link, Tag, Info, Date, Title, Description } from "./styles"
 
-const PostItem = () => (
-  <Link to="/slug">
+const PostItem = ({
+  slug,
+  background,
+  category,
+  date,
+  timeToRead,
+  title,
+  description,
+}) => (
+  <Link to={slug}>
     <Container>
-      <Tag background="#f0db4f">Js</Tag>
+      <Tag background={background}>{category}</Tag>
       <Info>
-        <Date>13 de Dezembro de 2019 • 4 min de leitura</Date>
-        <Title>Desvendando o Redux e Redux Saga no React</Title>
-        <Description>
-          Neste post você aprenderá a como utilizar o mais famoso gerenciador de
-          estados no maior framework web do mundo!
-        </Description>
+        <Date>
+          {date} • {timeToRead} min de leitura
+        </Date>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
       </Info>
     </Container>
   </Link>
 )
+
+PostItem.propTypes = {
+  slug: PropTypes.string.isRequired,
+  background: PropTypes.string,
+  category: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  timeToRead: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+}
 
 export default PostItem
