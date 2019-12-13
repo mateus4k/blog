@@ -23,7 +23,7 @@ const Profile = () => {
 
   return (
     <Container>
-      <Link>
+      <Link to="/">
         <Avatar />
         <Author>{title}</Author>
         <Position>{position}</Position>
