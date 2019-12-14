@@ -19,23 +19,7 @@ echo $variable;
 die;
 ```
 
-```css
-.line-numbers .line-numbers-rows {
-  border-right-color: #ece8de;
-}
-
-.line-numbers-rows > span:before {
-  color: #cdc4b1;
-}
-```
-
-```js
-let variable1 = 3
-let variable2 = 2
-let variable3 = 1
-
-console.log(variable)
-```
+![desert](/assets/img/desert.jpg)
 
 > Proin tempor erat purus.
 
