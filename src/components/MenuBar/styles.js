@@ -22,15 +22,11 @@ export const Group = styled.div`
 
 export const Link = styled(link)`
   display: block;
-
-  &:visited {
-    border: 1px solid red;
-  }
 `
 
 export const Item = styled.span`
   display: block;
-  color: "#8899a6";
+  color: #8899a6;
   height: 3.75rem;
   width: 3.75rem;
   padding: 1.1rem;
