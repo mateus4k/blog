@@ -8,11 +8,12 @@ const postsQuery = `
           slug
         }
         frontmatter {
+          title
+          background
           category
           date_timestamp: date
           date(locale: "pt-br", formatString: "YYYY")
           description
-          title
         }
         excerpt(pruneLength: 5000)
       }
