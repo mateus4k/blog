@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 import { Link as link } from "gatsby"
 
 export const Container = styled.aside`
@@ -13,15 +14,36 @@ export const Container = styled.aside`
   padding: 0.8rem 0;
   background: var(--mediumBackground);
   border-left: 1px solid var(--borders);
+  transition: background 0.5s;
+
+  ${media.lessThan("large")`
+    border-top: 1px solid var(--borders);
+    bottom: 0;
+    flex-direction: row;
+    height: auto;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+  `}
 `
 
 export const Group = styled.div`
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan("large")`
+    flex-direction: row;
+  `}
 `
 
 export const Link = styled(link)`
   display: block;
+
+  &.active {
+    span {
+      color: var(--highlight);
+    }
+  }
 `
 
 export const Item = styled.span`
@@ -45,4 +67,23 @@ export const Item = styled.span`
       color: #e2e240;
     }
   }
+
+  &.display {
+    ${media.lessThan("large")`
+      display: none;
+    `}
+  }
+
+  ${media.greaterThan("large")`
+    &:hover {
+      color: var(--highlight);
+    }
+  `}
+
+  ${media.lessThan("large")`
+    height: 3.2rem;
+    padding: .9rem;
+    position: relative;
+    width: 3.2rem;
+  `}
 `

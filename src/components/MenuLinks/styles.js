@@ -1,7 +1,12 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 import { Link as link } from "gatsby"
 
-export const Container = styled.nav``
+export const Container = styled.nav`
+  ${media.lessThan("large")`
+    display: none;
+  `}
+`
 
 export const List = styled.ul`
   font-size: 1.2rem;

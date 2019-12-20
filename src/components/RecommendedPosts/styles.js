@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 import { Link as link } from "gatsby"
 
 export const Container = styled.section`
@@ -17,6 +18,12 @@ export const Link = styled(link)`
   text-decoration: none;
   color: var(--highlight);
   transition: background 0.5s;
+
+  ${media.lessThan("large")`
+    padding: 2rem 1rem;
+    line-height: 1.3;
+    font-size: .9rem;
+  `}
 
   &:hover {
     background: var(--borders);

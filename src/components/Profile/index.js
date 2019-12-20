@@ -25,10 +25,12 @@ const Profile = () => {
     <Container>
       <Link to="/">
         <Avatar />
-        <Author>{title}</Author>
-        <Position>{position}</Position>
-        <Description>{description}</Description>
+        <Author>
+          {title}
+          <Position>{position}</Position>
+        </Author>
       </Link>
+      <Description>{description}</Description>
     </Container>
   )
 }
