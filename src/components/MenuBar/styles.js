@@ -37,4 +37,12 @@ export const Item = styled.span`
   &:hover {
     color: var(--highlight);
   }
+
+  &.light {
+    color: #d4d400;
+    transition: ease 0.3s;
+    &:hover {
+      color: #e2e240;
+    }
+  }
 `
