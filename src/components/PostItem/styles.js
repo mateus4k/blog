@@ -7,6 +7,13 @@ export const Container = styled.section`
   border-bottom: 1px solid var(--borders);
   padding: 2rem 3rem;
   width: 100%;
+
+  body#grid & {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+    border: none;
+  }
 `
 
 export const Link = styled(link)`
@@ -16,6 +23,10 @@ export const Link = styled(link)`
 
   &:hover {
     color: var(--highlight);
+  }
+
+  body#grid & {
+    background-color: var(--background);
   }
 `
 
@@ -32,6 +43,10 @@ export const Tag = styled.div`
     props.background ? props.background : "var(--highlight)"};
   color: var(--texts);
   text-transform: uppercase;
+
+  body#grid & {
+    margin-bottom: 1.5rem;
+  }
 `
 
 export const Info = styled.div`
@@ -48,6 +63,11 @@ export const Title = styled.h1`
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
+
+  body#grid & {
+    line-height: 1.1;
+    margin: 0.8rem 0;
+  }
 `
 
 export const Description = styled.p`

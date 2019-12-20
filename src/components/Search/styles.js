@@ -23,6 +23,19 @@ export const Container = styled.section`
   .ais-Stats {
     color: var(--texts);
   }
+  body#grid & {
+    .ais-Hits-list {
+      display: grid;
+      grid-area: card;
+      grid-gap: 1px;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      background-color: var(--borders);
+      border-bottom: 1px solid var(--borders);
+      border-top: 1px solid var(--borders);
+      margin-top: 2rem;
+    }
+  }
+
   .ais-SearchBox-input {
     background: none;
     border: none;
