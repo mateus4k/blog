@@ -4,16 +4,16 @@ import { Link as link } from "gatsby"
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  color: #8899a6;
+  color: var(--texts);
 `
 
 export const Link = styled(link)`
-  color: #8899a6;
+  color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
 
   &:hover {
-    color: #1fa1f2;
+    color: var(--highlight);
   }
 `
 

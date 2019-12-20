@@ -9,7 +9,7 @@ const MenuLinks = () => (
     <List>
       {links.map((link, index) => (
         <Item key={index}>
-          <Link to={link.url} activeStyle={{ color: "#1fa1f2" }}>
+          <Link to={link.url} activeStyle={{ color: "var(--highlight)" }}>
             {link.label}
           </Link>
         </Item>

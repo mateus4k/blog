@@ -11,8 +11,8 @@ export const Container = styled.aside`
   height: 100vh;
   width: 3.75rem;
   padding: 0.8rem 0;
-  background: "#192734";
-  border-left: 1px solid #38444d;
+  background: var(--mediumBackground);
+  border-left: 1px solid var(--borders);
 `
 
 export const Group = styled.div`
@@ -26,10 +26,15 @@ export const Link = styled(link)`
 
 export const Item = styled.span`
   display: block;
-  color: #8899a6;
+  color: var(--texts);
   height: 3.75rem;
   width: 3.75rem;
   padding: 1.1rem;
   position: relative;
   cursor: pointer;
+  transition: ease 0.5s;
+
+  &:hover {
+    color: var(--highlight);
+  }
 `

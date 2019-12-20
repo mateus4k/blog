@@ -3,9 +3,9 @@ import { Link as link } from "gatsby"
 
 export const Container = styled.section`
   display: flex;
-  background: #192734;
-  border-bottom: 1px solid #38444d;
-  border-top: 1px solid #38444d;
+  background: var(--mediumBackground);
+  border-bottom: 1px solid var(--borders);
+  border-top: 1px solid var(--borders);
 `
 
 export const Link = styled(link)`
@@ -13,17 +13,17 @@ export const Link = styled(link)`
   align-items: center;
   padding: 3rem;
   width: 50%;
-  background: #192734;
+  background: var(--mediumBackground);
   text-decoration: none;
-  color: #1fa1f2;
+  color: var(--highlight);
   transition: background 0.5s;
 
   &:hover {
-    background: #38444d;
+    background: var(--borders);
   }
 
   &.previous {
-    border-right: 1px solid #38444d;
+    border-right: 1px solid var(--borders);
   }
 
   &.next {

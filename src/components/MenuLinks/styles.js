@@ -13,11 +13,11 @@ export const Item = styled.li`
 `
 
 export const Link = styled(link)`
-  color: #8899a6;
+  color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
 
   &:hover {
-    color: #1fa1f2;
+    color: var(--highlight);
   }
 `

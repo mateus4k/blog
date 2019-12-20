@@ -9,5 +9,6 @@ export const Container = styled.aside`
   width: 20rem;
   height: 100vh;
   padding: 2rem;
-  border-right: 1px solid #38444d;
+  background: var(--mediumBackground);
+  border-right: 1px solid var(--borders);
 `

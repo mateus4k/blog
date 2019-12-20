@@ -11,13 +11,13 @@ export const Container = styled.section`
 
   #disqus_thread {
     a {
-      color: #1fa1f2 !important;
+      color: var(--higlight) !important;
     }
   }
 `
 
 export const Title = styled.h2`
-  color: #fff;
+  color: var(--texts);
   font-size: 2.1rem;
   font-weight: 700;
   padding-bottom: 2rem;
