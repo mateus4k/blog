@@ -51,13 +51,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Mateus Sampaio`,
+        short_name: `Mateus`,
         start_url: `/`,
-        background_color: `#7159c1`,
-        theme_color: `#7159c1`,
+        background_color: `#16202c`,
+        theme_color: `#16202c`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/4k-icon.png`,
       },
     },
     {
