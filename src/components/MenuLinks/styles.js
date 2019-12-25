@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import { Link as link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const Container = styled.nav`
   ${media.lessThan("large")`
@@ -17,7 +17,7 @@ export const Item = styled.li`
   padding: 0.5rem 0;
 `
 
-export const Link = styled(link)`
+export const Link = styled(AniLink)`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;

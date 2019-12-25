@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import { Link as link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const Container = styled.section`
   display: flex;
@@ -23,7 +23,7 @@ export const Container = styled.section`
   }
 `
 
-export const Link = styled(link)`
+export const Link = styled(AniLink)`
   display: flex;
   color: var(--texts);
   text-decoration: none;

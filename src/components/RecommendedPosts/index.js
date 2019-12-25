@@ -1,18 +1,34 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import getThemeColor from "../../utils/getThemeColor"
+
 import { Container, Link } from "./styles"
 
 const RecommendedPosts = ({ previous, next }) => (
   <Container>
     {!!previous && (
-      <Link to={previous.fields.slug} className="previous">
+      <Link
+        cover
+        direction="left"
+        bg={getThemeColor()}
+        duration={0.6}
+        to={previous.fields.slug}
+        className="previous"
+      >
         {previous.frontmatter.title}
       </Link>
     )}
 
     {!!next && (
-      <Link to={next.fields.slug} className="next">
+      <Link
+        cover
+        direction="right"
+        bg={getThemeColor()}
+        duration={0.6}
+        to={next.fields.slug}
+        className="next"
+      >
         {next.frontmatter.title}
       </Link>
     )}

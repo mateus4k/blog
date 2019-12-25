@@ -7,6 +7,8 @@ import { Grid } from "styled-icons/boxicons-solid/Grid"
 import { UpArrowAlt as Arrow } from "styled-icons/boxicons-regular/UpArrowAlt"
 import { ThList as List } from "styled-icons/typicons/ThList"
 
+import getThemeColor from "../../utils/getThemeColor"
+
 import { Container, Group, Link, Item } from "./styles"
 
 const MenuBar = () => {
@@ -27,12 +29,26 @@ const MenuBar = () => {
   return (
     <Container>
       <Group>
-        <Link to="/" title="Voltar para Home">
+        <Link
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/"
+          title="Voltar para Home"
+        >
           <Item>
             <Home />
           </Item>
         </Link>
-        <Link to="/search" title="Pesquisar">
+        <Link
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          duration={0.6}
+          to="/search"
+          title="Pesquisar"
+        >
           <Item>
             <Search />
           </Item>

@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import getThemeColor from "../../utils/getThemeColor"
+
 import { Container, Link, Tag, Info, Date, Title, Description } from "./styles"
 
 const PostItem = ({
@@ -12,7 +14,14 @@ const PostItem = ({
   title,
   description,
 }) => (
-  <Link to={slug}>
+  <Link
+    cover
+    direction="right"
+    bg={getThemeColor()}
+    duration={0.6}
+    activeStyle={{ color: "var(--highlight)" }}
+    to={slug}
+  >
     <Container>
       <Tag background={background}>{category}</Tag>
       <Info>
