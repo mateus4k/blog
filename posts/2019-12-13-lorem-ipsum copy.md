@@ -1,9 +1,10 @@
 ---
 date: 2019-12-14 05:54:23
-title: TESTE
+title: Testando imagens
 description: teste
 category: Js
 background: "#7159c1"
+image: "/assets/img/desert.jpg"
 ---
 
 ```jsx
