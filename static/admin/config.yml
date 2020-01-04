@@ -1,0 +1,59 @@
+backend:
+  name: github
+  repo: mateus4k/blog
+  branch: master
+  site_domain: https://mateus4k.netlify.com/
+
+publish_mode: editorial_workflow
+media_folder: "static/assets/img"
+public_folder: "assets/img"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD hh:mm:ss",
+        }
+      - { label: "image", name: "thumbnail", widget: "image" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options:
+            [
+              "react",
+              "react native",
+              "js",
+              "node",
+              "php",
+              "laravel",
+              "html",
+              "css",
+            ],
+        }
+      - {
+          label: "Background",
+          name: "background",
+          widget: "select",
+          options:
+            [
+              { label: "React", value: "#D6BA32" },
+              { label: "React Native", value: "#2DA0C3" },
+              { label: "JS", value: "#D6BA32" },
+              { label: "Node", value: "#3C873A" },
+              { label: "PHP", value: "#474a8a" },
+              { label: "Laravel", value: "#F05340" },
+              { label: "HTML", value: "#EB7728" },
+              { label: "CSS", value: "#2DA0C3" },
+            ],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
