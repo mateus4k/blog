@@ -23,7 +23,7 @@ const postsQuery = `
   }
 }`
 
-const flatten = array =>
+const flatten = (array) =>
   array.map(({ node: { frontmatter, ...rest } }) => ({
     ...frontmatter,
     date_timestamp: parseInt(
@@ -38,7 +38,7 @@ const queries = [
     transformer: ({ data }) => flatten(data.posts.edges),
     indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
     settings: {
-      attributesToSnipper: ["excerpt:20"],
+      attributesToSnippet: ["excerpt:20"],
     },
   },
 ]
