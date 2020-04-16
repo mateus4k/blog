@@ -15,9 +15,9 @@ Por padrão utilizado com o JavaScript, veremos a seguir como migrar um projeto 
 
 ![expo-ts](/assets/img/expo-ts.png)
 
-## Integrando TypeScript no seu projeto existente
+### Integrando TypeScript no seu projeto existente
 
-### Na raiz de seu projeto crie o arquivo `tsconfig.json` e o configure desta forma
+1. Crie o arquivo `tsconfig.json` na raiz de seu projeto
 
 ```json
 {
@@ -33,30 +33,30 @@ Por padrão utilizado com o JavaScript, veremos a seguir como migrar um projeto 
 }
 ```
 
-### Em seguida, instale as bibliotecas de tipagem e o próprio TypeScript como dependências de desenvolvimento
+2. Instale o TypeScript e as bibliotecas de tipagem como dependências de desenvolvimento
 
 ```bash
 yarn add -D @types/react @types/react-native typescript
 ```
 
-### Altere a extensão de seus arquivos
+3. Altere a extensão dos arquivos
 
-> Este passo pode ser realizado manualmente ou com a ajuda do terminal
-
-- Para componentes React, renomeie para `.tsx`
+Para componentes React, renomeie para `.tsx`
 
 ```bash
 mv App.js App.tsx
 ```
 
-- Para arquivos **sem JSX**, renomeie para `.ts`
+Para arquivos **sem JSX**, renomeie para `.ts`
 
 ```bash
 mv styles.js styles.ts
 ```
 
-### Hora de executar o projeto! 😃
+4. Hora de executar o projeto!
 
 ```bash
 yarn start
 ```
+
+5. Bom proveito! 😃
