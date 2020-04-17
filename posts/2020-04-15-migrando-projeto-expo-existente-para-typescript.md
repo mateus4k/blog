@@ -7,11 +7,11 @@ background: "#007acc"
 image: "/assets/img/expo-ts.png"
 ---
 
-O [TypeScript](https://www.typescriptlang.org/) é um superset JavaScript que fornece tipos estáticos e funcionalidades poderosas em editores como o [Visual Studio Code](https://code.visualstudio.com/), como autocompletion e warnings que antecipam possíveis erros ainda durante o desenvolvimento. Para alguns, o TypeScript é simplesmente o JavaScript que escala!
+O [TypeScript](https://www.typescriptlang.org/) é um superset JavaScript que fornece tipos estáticos e funcionalidades poderosas em editores como o [Visual Studio Code](https://code.visualstudio.com/). Ele pode nos oferecer autocompletion e warnings que antecipam possíveis erros ainda durante o desenvolvimento. Para alguns, o TypeScript é simplesmente o JavaScript que escala!
 
 Já o [Expo](http://expo.io/) é um conjunto de ferramentas e serviços criados em torno do React Native e plataformas nativas que ajudam a desenvolver e subir aplicações rapidamente para iOS, Android e aplicações web a partir da mesma base de código JavaScript ou TypeScript.
 
-Por padrão utilizado com o JavaScript, veremos a seguir como migrar um projeto Expo já existente para Typescript.
+Veremos a seguir como migrar um projeto Expo já existente de JavaScript para TypeScript.
 
 ![expo-ts](/assets/img/expo-ts.png)
 
